@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CURRICULUM VITAE</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+    }
+    h1{
+        color: blue;
+        background-color: orange;
+    }
+    table,tr,td{
+        border-collapse: collapse;
+        border: 1px solid olive;
+        
+        
+    }
+   
+</style>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">MY CURRICULUM VITAE</h1>
+        <h2><u>My Personal details</u></h2>
+        <table style="width: 60%;">
+            <tr>
+                <td>First Name</td>
+                <td>Yamungu</td>
+                
+                
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>Nyabenda</td>
+            </tr>
+            <tr>
+                <td>Email </td>
+                <td>yamungujohn21@gmail.com</td>  
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td>0757276362</td>
+                <tr>
+                    <td>Adress</td>
+                    <td>Tunguu Zanzibar</td>
+
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Male</td>
+
+                </tr>
+                <tr>
+                    <td>Malital Status</td>
+                    <td>Single</td>
+                </tr>
+
+            </tr>
+            
+
+        </table>
+        <h2><u><b>Education Background</b></u></h2>
+        <table style="width: 60%;">
+            <tr>
+                <td>State University of Zanzibar: </td>
+                 <td>2021-2024</td>
+
+            </tr>
+            <tr>
+                <td>Lukole High School</td>
+                <td>2019-2021</td>
+            </tr>
+            <tr>
+                <td>Kirushya Secondary School</td>
+                <td>2015-2018</td>
+            </tr>
+            <tr>
+                <td>Kirushya Primary Schoo</td>
+                <td>2008-2014</td>
+            </tr>
+        </table>
+
+        <h2><u><b>Working Experience</b></u></h2>
+        <table style="width: 60%;">
+            <tr>
+                <td>networker Solution</td>
+                <td>ZAnIT Kiliman Plaza Unguja</td>
+            </tr>
+            <tr>
+                <td>Lameck Electronic Company</td>
+                <td>Kagera Tanzania</td>
+        
+            </table>
+        <h2><u><b>Skills</b></u></h2>
+        <ol>
+            <li>Maintainance in Mobile Phones</li>
+            <li>computer maintainance</li>
+            <li>Network Solution</li>
+            <li>software developer</li>
+            <li>Communication Skills</li>
+            
+        </ol>
+        <h2><u>Proffesional Course</u></h2>
+        <ol>
+            <li>computer maintainance course</li>
+            <li>Network solution</li>
+            <li>database management</li>
+            <li>software develpoment course</li>
+            <li>communiction skill course</li>
+        </ol>
+        <h2><u><b>Project</b></u></h2>
+        <ol>
+            <li>Task allocation system</li>
+        </ol>
+        <p>In my projects i have attended many assignments as instructed by my lectures to assign tasks 
+        to individuals or groups in my field work <br>
+        Therefore this way that lectures uses to provide experience to as
+        heps to implove my capacity in Information Technology<br>
+         
+        assigning <br>
+        provision of various practical tasks
+        The main objectives is  usually to optimize the use of resources,
+         reduce cost , and <br> improve a particular 
+          and efficiency. Task allocation systems can be used in a variety 
+        of contexts, including businesses,<br> schools, hospitals, 
+        industry and other organization.</p>
+        <p>on this project i can do some assignment such as designing web page, login page, aslo css to make an page clear <br>
+        another assignment  is javascript to create local storage, moreover design a project such as use case, ERD, DFD</p>
+        <p>the experience that i have gotten in my project i hope it can helps me to solve various IT problems                                                                                                                  others</p>
+        <ol>
+            <li>JAVASCRIPT</li>
+            <li>HTML & CSS</li>
+            <li>java</li>
+            <li>spring boot</li>
+            <li>database</li>
+        </ol>
+        <p>this project deals with labour expecially merchanican, networker,engineering,and other who work at  various place <br>
+        and I make this project as software developer and after testing and implemetation become the end of my project on  1 may 2023
+        </p>
+        <h2><u>Management experience</u></h2>
+        <p>when I was at nag dadaz high school i was a leader of environmental department on 2020</p>
+        <h2><u>Dependents</u></h2>
+        
+        <address><pre>
+            Mr.kibosire Khamiss,
+            zamIT solution,
+            kiliman Plaza zanzibar,<br>
+
+
+            Mr Lameck chandongo,
+            Elecronic Company,
+            Kagera Tanzania.</pre>
+        </address>
+
+        
+            
+            
+
+        </ul>
+    </div>
+    <iframe src="http://www.zanitsolutions.com" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <div class="container">
+        <h2>Contact us</h2>
+        <form id="naymar">
+            <label for="Name">Name</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="Email">Email</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="Phone">Phone</label>
+            <input type="tel" id="Phone" name="Phone"><br><br>
+            <label for="message">message</label>
+            <input type="textarea" id="message" name="message"><br><br>
+            <input  type="submit" value="submit"><br>
+
+        </form>
+       
+    </div>
+   <script>
+        let contactus = document.getElementById("naymar");
+        contactus.addEventListener('submit',function(event){
+            event.preventDefault();
+            //data in html put in javascript
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let Phone = document.getElementById("Phone").value;
+            let message = document.getElementById("message").value;
+            //contant take data inform of object
+            let contact ={
+            name:name,email:email,phone:Phone
+            };
+            //data inform of JSON
+            let contacts =JSON.parse(localStorage.getItem("contacts"))||[];
+            // when user want to see those data hence can be tansform from json to object
+            contacts.push(contact);
+            localStorage.setItem("contacts",JSON.stringify(contacts));
+            alert(`thank you ${name} for ure comment`);
+            contactus.reset();
+        });    
+   </script> 
+</body>
+</html>

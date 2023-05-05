@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: blue;
+
+    }
+    div{
+        border: 1px solid pink;
+        text-align: center;
+        width: 350px;
+        background-color: wheat;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .signup{
+        width: 100px;
+        height: 30px;
+        color: green;
+    }
+    .forget{
+        position: relative;
+        right: 70px;
+        top: 10px;
+        color: blue;
+    }
+    h1{
+        background-color: peru;
+    }
+    button{
+       
+        position: relative;
+        left: 25px;
+        top: 84px; 
+    }
+</style>
+<body>
+    
+    <div class="container">
+        <center>
+            <h1 style="text-align: center; color:blueviolet ;" >Login form</h1>
+        <form id="mimy" >
+            <label for="username"> username</label>
+            <input  type="text" id="username"><br><br>
+            <label for="Passowrd"> Passowrd</label>
+            <input type="password" id="password"><br><br>
+            <a class="forget" href="forgot password">forgot password</a><br><br>
+            <button  type="Send">Send</button>
+            <h5>not a member? <a class="signnow" href="signup now">signup now</a></h5>
+        </form>
+        </center>
+        <div id="Infor"></div>
+
+    </div>
+    <script>
+        let cont= document.getElementById("mimy");
+        cont.addEventListener("submit" ,function(event){
+            event.preventDefault();
+            let username =document.getElementById("username").value;
+            let password =document.getElementById("password").value;
+            if(username=== "admin" && password=== "password"){
+                let contacts=JSON.parse(localStorage.getItem("contacts"))||[];
+                let contactinfor ="";
+                for(let i=0; i< contacts.length;i++){
+                    contactinfor +="<h1>"+(i+1)+"</h1>";
+                    contactinfor +="<p> name"+contacts[i].name+"</p>" ;
+                    contactinfor +="<p> email"+contacts[i].email +"</P>";
+                    contactinfor +="<p> phone"+contacts[i].phone +"</p>";
+                    contactinfor +="<p> message"+contacts[i].message +"</p>";                           
+                };
+                document.getElementById("Infor").innerHTML=contactinfor;
+            }else{
+                alert("wrong usename or password");                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+            };
+            cont.reset(); 
+        })
+    </script>
+    
+</body>
+</html>
